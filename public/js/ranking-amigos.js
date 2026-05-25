@@ -32,14 +32,6 @@ const dashboardBtn =
   UIDs permitidos
 */
 const allowedUsers = [
-
-  "3InzFpMv02hvU9UqpLmti5nuAPv2", //Andreia
-  "Cd5F4JCZilfXTA5kZEjQBvfpRZw2", //Rodrigo Cantelli
-  "T6auukBGzPXzOzUllhK47pehUQY2", //Thomaz Macetti
-  "X5NYRnHbtcTJyNSqfEDdCWgvAKJ3", //Lucas
-  "iMEVz591t5O0BxvFpoSf3X97m4U2", //Vinicius Souza
-  "rf7HxVfZpaamrskhoHCgRCk4JB12", //João Francisco Vargas Meireles
-  "wylmIqCsMrckzQgyyT1xBYaWoQl1", //João Pedro Mola Massa
 ];
 
 onAuthStateChanged(
