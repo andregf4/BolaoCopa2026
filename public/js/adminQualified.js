@@ -16,7 +16,7 @@ import {
   setDoc
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
-const ADMIN_EMAIL = "andrejuventude@gmail.com";
+const ADMIN_EMAIL = "";
 
 const qualifiedContainer =
   document.getElementById("qualifiedContainer");
