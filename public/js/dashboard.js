@@ -28,7 +28,7 @@ const knockoutBtn = document.getElementById("knockoutBtn");
 
 const adminBtn = document.getElementById("adminBtn");
 
-const ADMIN_EMAIL = "andrejuventude@gmail.com";
+const ADMIN_EMAIL = "";
 
 const groupsContainer = document.getElementById("groupsContainer");
 
