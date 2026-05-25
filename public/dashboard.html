@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Início</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+</head>
+<body>
+
+  <header class="topbar">
+
+    <div class="user-info">
+      <img id="userPhoto" referrerpolicy="no-referrer">
+
+      <div>
+        <h2 id="userName"></h2>
+        <p id="userEmail"></p>
+      </div>
+    </div>
+
+    <div class="topbar-buttons">
+
+      <button id="adminBtn" style="display: none;">
+        Painel Admin
+      </button>
+
+      <button id="knockoutBtn">
+        <i class="fa-solid fa-trophy"></i>
+        Mata-Mata
+      </button>
+
+      <button
+        onclick="
+          window.location.href='ranking.html'
+        "
+      >
+      <i class="fa-solid fa-medal"></i>
+        Ranking
+      </button>
+
+      <button id="logoutBtn">
+  <i class="fa-solid fa-right-from-bracket"></i>
+</button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <h1 class="main-title">
+      Fase de Grupos
+    </h1>
+
+    <div id="groupsContainer" class="groups-grid"></div>
+
+    <div class="global-save-container">
+
+    <button id="saveAllBtn">
+        Salvar Todos os Palpites
+    </button>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+  <script type="module" src="js/dashboard.js"></script>
+
+  <div id="toast"></div>
+
+</body>
+</html>

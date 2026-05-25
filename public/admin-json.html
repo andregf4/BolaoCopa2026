@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>
+    Firestore JSON Viewer
+  </title>
+
+  <style>
+
+    body {
+
+      background: #111827;
+
+      color: #f9fafb;
+
+      font-family: monospace;
+
+      padding: 24px;
+
+    }
+
+    pre {
+
+      white-space: pre-wrap;
+
+      word-wrap: break-word;
+
+      background: #1f2937;
+
+      padding: 20px;
+
+      border-radius: 12px;
+
+      overflow-x: auto;
+
+    }
+
+    button {
+
+      padding: 12px 18px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      cursor: pointer;
+
+      margin-bottom: 20px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <button id="loadBtn">
+    Carregar Firestore
+  </button>
+
+  <pre id="output">
+Aguardando...
+  </pre>
+
+  <script
+    type="module"
+    src="js/admin-json.js"
+  ></script>
+
+</body>
+
+</html>

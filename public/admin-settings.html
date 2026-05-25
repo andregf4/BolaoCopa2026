@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Configurações</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <h1>Configurações do Sistema</h1>
+
+    <div class="topbar-buttons">
+
+      <button id="backAdminBtn">
+      <i class="fa-solid fa-shield-halved"></i>
+        Admin
+      </button>
+
+      <button id="logoutBtn">
+      <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="settings-container">
+
+      <label class="setting-card">
+
+        <input
+          type="checkbox"
+          id="groupsLocked"
+        >
+
+        <div>
+
+          <h3>
+            Travar Fase de Grupos
+          </h3>
+
+          <p>
+            Usuários não poderão alterar palpites.
+          </p>
+
+        </div>
+
+      </label>
+
+      <div class="setting-card setting-card-column">
+
+        <div>
+
+          <h3>
+            Travar fases do Mata-Mata
+          </h3>
+
+          <p>
+            Controle individual por fase.
+          </p>
+
+        </div>
+
+        <div class="phase-locks">
+
+          <label>
+
+            <input
+              type="checkbox"
+              id="lock_round32"
+            >
+
+            1/16 de Final
+
+          </label>
+
+          <label>
+
+            <input
+              type="checkbox"
+              id="lock_round16"
+            >
+
+            Oitavas de Final
+
+          </label>
+
+          <label>
+
+            <input
+              type="checkbox"
+              id="lock_quarterfinals"
+            >
+
+            Quartas de Final
+
+          </label>
+
+          <label>
+
+            <input
+              type="checkbox"
+              id="lock_semifinals"
+            >
+
+            Semifinais
+
+          </label>
+
+          <label>
+
+            <input
+              type="checkbox"
+              id="lock_thirdplace"
+            >
+
+            3º Lugar
+
+          </label>
+
+          <label>
+
+            <input
+              type="checkbox"
+              id="lock_final"
+            >
+
+            Final
+
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="global-save-container">
+
+      <button id="saveSettingsBtn">
+        Salvar Configurações
+      </button>
+
+      <button id="resetSystemBtn">
+        Resetar Sistema
+      </button>
+
+    </div>
+
+  </main>
+
+  <script
+    type="module"
+    src="js/adminSettings.js"
+  ></script>
+
+  <div id="toast"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Mata-Mata</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <h1>Chaveamento Mata-Mata</h1>
+
+    <div class="topbar-buttons">
+
+      <button id="backAdminBtn">
+        <i class="fa-solid fa-shield-halved"></i>
+        Admin
+      </button>
+
+      <button id="logoutBtn">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div id="matchesContainer"></div>
+
+    <div class="global-save-container">
+
+      <button id="saveMatchesBtn">
+        Salvar Chaveamento
+      </button>
+
+    </div>
+
+  </main>
+
+  <script
+    type="module"
+    src="js/adminKnockout.js"
+  ></script>
+
+  <div id="toast"></div>
+
+</body>
+
+</html>

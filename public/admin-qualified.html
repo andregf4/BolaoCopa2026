@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Classificados</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <h1>Seleções Classificadas</h1>
+
+    <div class="topbar-buttons">
+
+      <button
+        id="backAdminBtn"
+      >
+        Painel Admin
+      </button>
+
+      <button
+        id="logoutBtn"
+      >
+      <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <h2 class="main-title">
+      Primeiros e Segundos Classificados
+    </h2>
+
+    <div id="qualifiedContainer"></div>
+
+    <h2 class="main-title">
+      Selecione os 8 Melhores Terceiros
+    </h2>
+
+    <div id="thirdPlaceContainer"></div>
+
+    <div class="global-save-container">
+
+      <button id="saveQualifiedBtn">
+        Salvar Classificados
+      </button>
+
+    </div>
+
+  </main>
+
+  <script
+    type="module"
+    src="js/adminQualified.js"
+  ></script>
+
+  <div id="toast"></div>
+
+</body>
+
+</html>
